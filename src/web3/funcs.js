@@ -12,7 +12,7 @@ const Contract = require('web3-eth-contract');
 Contract.setProvider(BSC_MAINNET_RPC);
 
 // Contract Address
-export const SAVER_TOKEN_CONTRACT_ADDRESS = "0x909B2eba8C86d72f69E407DF35D2306c2F58Dcfd";
+export const SAVER_TOKEN_CONTRACT_ADDRESS = "0x6e637A68d5319Bd1Fe17FEf8c1D53cDbeD6e6866";
 export const BUSD_CONTRACT_ADDRESS = "0xe9e7cea3dedca5984780bafc599bd69add087d56";
 export const DAI_CONTRACT_ADDRESS = "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3";
 
