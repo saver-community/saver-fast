@@ -166,17 +166,17 @@ const Dapp = () => {
       contractSaver == null ? 
       <>
         <Head>
-          <title>Saver Community - Dapp</title>
-          <meta name="description" content="Aplicacion oficial de Saver Community." />
-          <meta name="image" content="https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png" />
+          <title>Saver Fast - Dapp</title>
+          <meta name="description" content="Aplicacion oficial de Saver Fast." />
+          <meta name="image" content="https://i.ibb.co/qChFmVn/saver-fast.png" />
         </Head>
   
         <VStack w='full'>
           <Box h='120px' />
           <Image
-          src='https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png'
+          src='https://i.ibb.co/qChFmVn/saver-fast.png'
           alt='Saver Token Icon'
-          boxSize={400}
+          boxSize='fit'
           />
           {
             loading ?
@@ -200,9 +200,9 @@ const Dapp = () => {
       </> :
       <>
         <Head>
-          <title>Saver Community - Dapp</title>
-          <meta name="description" content="Aplicacion oficial de Saver Community." />
-          <meta name="image" content="https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png" />
+          <title>Saver Fast - Dapp</title>
+          <meta name="description" content="Aplicacion oficial de Saver Fast." />
+          <meta name="image" content="https://i.ibb.co/qChFmVn/saver-fast.png" />
         </Head>
   
         {/* Alert Dialog ANOTHER BLOCKCHAIN */}

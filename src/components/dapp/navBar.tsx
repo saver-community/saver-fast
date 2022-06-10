@@ -42,16 +42,18 @@ export const NavBar = ({props}: NavBarProps) => {
                 
                 <VStack display={{lg: 'flex', md: 'flex', sm: 'none', base: 'none'}}>
                     <Image
-                    boxSize="50px"
+                    width='90px'
+                    height='60px'
                     src={props.photoURL}
-                    alt="Saver Community"
+                    alt="Saver Fast"
                     />
                     <Text color='pink.400' fontFamily='mono' fontSize={{lg: 'md', md: 'md', sm: '10px', base: '10px'}}>Donar es Recibir</Text>
                 </VStack>
 
                 <VStack w='full' display={{lg: 'none', md: 'none', sm: 'flex', base: 'flex'}} >
                     <Image
-                    boxSize="50px"
+                    width='90px'
+                    height='60px'
                     src={props.photoURL}
                     alt="Saver Community"
                     />

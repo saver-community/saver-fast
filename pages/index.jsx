@@ -39,9 +39,9 @@ const Home  = () => {
   return (
     <>
       <Head>
-        <title>Saver Community</title>
-        <meta name="description" content="Aplicacion oficial de Saver Community." />
-        <meta name="image" content="https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png" />
+        <title>Saver Fast</title>
+        <meta name="description" content="Aplicacion oficial de Saver Fast." />
+        <meta name="image" content="https://i.ibb.co/qChFmVn/saver-fast.png" />
       </Head>
 
       <VStack w='full'>

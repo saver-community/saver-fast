@@ -25,16 +25,16 @@ const itemsES: TheNavItem[] = [
 ];
 
 export const theNavBarES: TheNavBar = {
-    title: 'Saver Community',
-    photoURL: 'https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png',
+    title: 'Saver Fast',
+    photoURL: 'https://i.ibb.co/qChFmVn/saver-fast.png',
     navItems: itemsES,
     lang: langs[0],
     langs: langs
 };
 
 export const theNavBarEN: TheNavBar = {
-    title: 'Saver Community',
-    photoURL: 'https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png',
+    title: 'Saver Fast',
+    photoURL: 'https://i.ibb.co/qChFmVn/saver-fast.png',
     navItems: itemsES,
     lang: langs[1],
     langs: langs

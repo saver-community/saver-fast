@@ -295,9 +295,9 @@ const Desktop = () => {
                     <VStack w='500px' h='full'>
                         <Spacer />
                         <Image 
-                        src='https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png'
+                        src='https://i.ibb.co/qChFmVn/saver-fast.png'
                         alt='saver'
-                        boxSize='150px'
+                        boxSize='fit'
                         opacity={ getDaysPlaying() <= DAYS || Number(amountBDD) <= MIN_AMOUNT ? '50%' : null }
                         />
                         <Button variant='actionDapp' onClick={handleClaim}>RECLAMAR</Button>
@@ -570,9 +570,9 @@ const Mobile = () => {
                     <VStack w='full' h='full'>
                         <Spacer />
                         <Image 
-                        src='https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png'
+                        src='https://i.ibb.co/qChFmVn/saver-fast.png'
                         alt='saver'
-                        boxSize='150px'
+                        boxSize='fit'
                         opacity={ getDaysPlaying() <= DAYS || Number(amountBDD) <= MIN_AMOUNT ? '50%' : null }
                         />
                         <Button  variant='actionDapp' onClick={handleClaim}>RECLAMAR</Button>

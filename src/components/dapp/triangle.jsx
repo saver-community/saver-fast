@@ -13,7 +13,7 @@ export const Triangle = () => {
 
     // Token Images
     const bddImage = useColorModeValue("https://i.ibb.co/Pgb5Nh8/donate.png", "https://i.ibb.co/pwWZ1PJ/donate-dark.png");
-    const saverImage = "https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png";
+    const saverImage = "https://i.ibb.co/qChFmVn/saver-fast.png";
     const busdImage = "https://i.ibb.co/ZMhhYjc/busd.png";
     const daiImage = "https://i.ibb.co/jM9D4nh/DAI.png";
 

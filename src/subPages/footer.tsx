@@ -7,9 +7,10 @@ export const Footer = () => {
         <HStack w='full' h='75px' display={{lg: 'flex', md: 'flex', sm: 'none', base:"none"}}>
             <Box w='10px'/>
             <Image
-            src='https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png'
+            src='https://i.ibb.co/qChFmVn/saver-fast.png'
             alt='Saver Token icon'
-            boxSize={70}
+            width='90px'
+            height='60px'
             />
             <Box w='25px' />
             <Heading fontSize={{lg: 'xl', md: 'xl', sm: 'lg', base: 'md'}} color='pink.400'>Saver Community</Heading>
@@ -25,9 +26,10 @@ export const Footer = () => {
             <HStack w='full'>
                 <Box w='10px' />
                 <Image
-                src='https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png'
+                src='https://i.ibb.co/qChFmVn/saver-fast.png'
                 alt='Saver Token icon'
-                boxSize={70}
+                width='90px'
+                height='60px'
                 />
                 <Box w='25px' />
                 <Heading fontSize={{lg: 'xl', md: 'xl', sm: 'lg', base: 'lg'}} color='pink.400'>Saver Community</Heading>

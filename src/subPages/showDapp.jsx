@@ -9,9 +9,9 @@ export const ShowDapp = () => {
             <Box h="100px"/>
 
             <Image 
-            src='https://i.ibb.co/z7hxTvw/SAVER-TOKEN.png'
+            src='https://i.ibb.co/qChFmVn/saver-fast.png'
             alt='Saver Token Icon'
-            boxSize={400}
+            boxSize='fit'
             />
             <HStack w='full'>
                 <Spacer />
