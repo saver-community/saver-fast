@@ -3,13 +3,13 @@ import SaverToken from './ABI/SaverToken.json';
 import BUSD from './ABI/BUSD.json';
 import { MORALIS_ID } from '../../private';
 
-const BSC_TESTNET_RPC = `https://speedy-nodes-nyc.moralis.io/${MORALIS_ID}/bsc/mainnet`;
+const BSC_MAINNET_RPC = `https://speedy-nodes-nyc.moralis.io/${MORALIS_ID}/bsc/mainnet`;
 
 export const CHAIN_ID = 56;
  
 const Contract = require('web3-eth-contract');
 
-Contract.setProvider(BSC_TESTNET_RPC);
+Contract.setProvider(BSC_MAINNET_RPC);
 
 // Contract Address
 export const SAVER_TOKEN_CONTRACT_ADDRESS = "0x909B2eba8C86d72f69E407DF35D2306c2F58Dcfd";
@@ -19,7 +19,7 @@ export const DAI_CONTRACT_ADDRESS = "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3"
 // Load Web3 to show info only
 export const loadWeb3Data = async () => 
 {
-    window.web3 = new Web3(BSC_TESTNET_RPC);
+    window.web3 = new Web3(BSC_MAINNET_RPC);
 
     const data = await getDataWeb3();
 
