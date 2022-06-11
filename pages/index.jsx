@@ -11,6 +11,8 @@ import { TheDivider } from '../src/components/theDivider';
 import { InfoSaver } from '../src/subPages/infoSaver';
 import { InfoStableCoin } from '../src/subPages/infoStableCoin';
 import { InfoSaverBusd } from '../src/subPages/infoSaverBusd';
+import { RoadMap } from '../src/subPages/roadMap';
+import { Footer } from '../src/subPages/footer';
 
 const Home  = () => {
 
@@ -55,8 +57,9 @@ const Home  = () => {
         <TheDivider h={true} />
         <InfoSaverBusd />
         <TheDivider h={true} />
-        <ShowDapp />
-
+        <RoadMap />
+        <TheDivider h={true} />
+        <Footer />
       </VStack>
 
     </>
