@@ -33,7 +33,7 @@ export const InfoSaverBusd = () => {
 
                 <HStack w='full'>
                     <Box w='10px' />
-                    <Link isExternal href='https://pancakeswap.finance/' w='full'>
+                    <Link isExternal href='https://pancakeswap.finance/swap' w='full'>
                         <Button w='full' variant='actionDapp'>Pool de Liquidez</Button>
                     </Link>
                     <Box w='10px' />
@@ -82,7 +82,7 @@ export const InfoSaverBusd = () => {
                         <Box h='10px' />
                         <HStack w='full'>
                             <Spacer />
-                            <Link isExternal href='https://pancakeswap.finance/'>
+                            <Link isExternal href='https://pancakeswap.finance/swap'>
                                 <Button variant='actionDapp' w='300px'>Pool de Liquidez</Button>
                             </Link>
                             <Spacer />
