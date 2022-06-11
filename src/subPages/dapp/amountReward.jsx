@@ -57,7 +57,7 @@ export const AmountReward = () => {
             from: account,
             to: contractBUSDaddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('50', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
             data: data
         };
 
@@ -114,7 +114,7 @@ export const AmountReward = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('50', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
             data: data
         };
 
@@ -171,7 +171,7 @@ export const AmountReward = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('50', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
             data: data
         };
 

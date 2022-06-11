@@ -52,7 +52,7 @@ export const Timer = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas),
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('50', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
             data: data
         };
 

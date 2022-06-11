@@ -128,7 +128,7 @@ const Desktop = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('20', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
             data: data
         };
 
@@ -377,7 +377,7 @@ const Mobile = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('20', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
             data: data
         };
 
