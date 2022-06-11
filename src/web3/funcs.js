@@ -2,6 +2,7 @@ import Web3 from 'web3';
 import SaverToken from './ABI/SaverToken.json';
 import BUSD from './ABI/BUSD.json';
 import { MORALIS_ID } from '../../private';
+import { ABI_FACTORY, ABI_PAIR } from './ABI/PancakeSwap';
 
 const BSC_MAINNET_RPC = `https://speedy-nodes-nyc.moralis.io/${MORALIS_ID}/bsc/mainnet`;
 
@@ -17,6 +18,7 @@ Contract.setProvider(BSC_MAINNET_RPC);
 export const SAVER_TOKEN_CONTRACT_ADDRESS = "0x6e637A68d5319Bd1Fe17FEf8c1D53cDbeD6e6866";
 export const BUSD_CONTRACT_ADDRESS = "0xe9e7cea3dedca5984780bafc599bd69add087d56";
 export const DAI_CONTRACT_ADDRESS = "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3";
+export const FACTORY_ADDRESS = "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73";
 
 // Load Web3 to show info only
 export const loadWeb3Data = async () => 
@@ -33,7 +35,14 @@ export const loadWeb3Data = async () =>
 
 const getSaverPrice = async () => 
 {
-    return '0.00002';
+    const ContractFactory = new Contract(ABI_FACTORY, FACTORY_ADDRESS);
+    const pair = await ContractFactory.methods.getPair(SAVER_TOKEN_CONTRACT_ADDRESS, BUSD_CONTRACT_ADDRESS).call();
+
+    const ContractPair = new Contract(ABI_PAIR, pair);
+    const res = await ContractPair.methods.getReserves().call();
+    
+
+    return `${Number(res[0]/res[1]).toFixed(2)} BUSD`;
 };
 
 const getHoursToNextReward = (timestampNow, timestampOpenReward) => 
