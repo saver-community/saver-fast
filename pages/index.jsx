@@ -18,9 +18,9 @@ const Home  = () => {
 
   // Context
   const { 
-    saverCirculation, setSaverCirculation, saverHolders, setSaverHolders,
-    busdDistributed, setBusdDistributed, lastBusdDistributed, setLastBusdDistributed,
-    saverPrice, setSaverPrice, saverMinted, setSaverMinted
+    setSaverCirculation, setSaverHolders,
+    setBusdDistributed, setLastBusdDistributed,
+    setSaverPrice, setSaverMinted
   } = useProvider();
 
   // React useEffect
