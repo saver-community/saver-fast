@@ -5,7 +5,7 @@ import { VStack, HStack, Spacer, Box, Text, Heading, Image, Button,
      AlertDialogBody, AlertDialogFooter } from '@chakra-ui/react';
 import React from 'react';
 import { useProvider } from '../../context';
-import { loadDappData } from '../../web3/funcs';
+import { loadDappData, GAS_PRICE } from '../../web3/funcs';
 
 
 export const PremioSaver = () => {
@@ -128,7 +128,7 @@ const Desktop = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei(GAS_PRICE, 'gwei')),
             data: data
         };
 
@@ -377,7 +377,7 @@ const Mobile = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei(GAS_PRICE, 'gwei')),
             data: data
         };
 

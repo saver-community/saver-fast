@@ -3,7 +3,7 @@ import { HStack, VStack, Spacer, Box, Button, Input, Spinner, useColorModeValue,
      AlertDialogBody, AlertDialogFooter, Text } from '@chakra-ui/react';
 import { CardDapp } from '../../components/dapp/card';
 import { Timer } from '../../components/dapp/timer';
-import { loadDappData } from '../../web3/funcs';
+import { GAS_PRICE, loadDappData } from '../../web3/funcs';
 import React from 'react';
 import { useProvider } from '../../context';
 import { CloseIcon } from "@chakra-ui/icons";
@@ -57,7 +57,7 @@ export const AmountReward = () => {
             from: account,
             to: contractBUSDaddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei(GAS_PRICE, 'gwei')),
             data: data
         };
 
@@ -114,7 +114,7 @@ export const AmountReward = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei(GAS_PRICE, 'gwei')),
             data: data
         };
 
@@ -171,7 +171,7 @@ export const AmountReward = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas), // Gas limit
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei(GAS_PRICE, 'gwei')),
             data: data
         };
 

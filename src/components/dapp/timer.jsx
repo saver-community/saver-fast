@@ -9,7 +9,7 @@ import {
   } from '@chakra-ui/react'
 import React from "react";
 import { useProvider } from "../../context";
-import { loadDappData } from "../../web3/funcs";
+import { loadDappData, GAS_PRICE } from "../../web3/funcs";
 
 
 
@@ -52,7 +52,7 @@ export const Timer = () => {
             from: account,
             to: contractSaverAddress,
             gas: window.web3.utils.toHex(estimateGas),
-            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei('10', 'gwei')),
+            gasPrice: window.web3.utils.toHex(window.web3.utils.toWei(GAS_PRICE, 'gwei')),
             data: data
         };
 

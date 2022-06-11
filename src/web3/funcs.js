@@ -6,6 +6,8 @@ import { MORALIS_ID } from '../../private';
 const BSC_MAINNET_RPC = `https://speedy-nodes-nyc.moralis.io/${MORALIS_ID}/bsc/mainnet`;
 
 export const CHAIN_ID = 56;
+
+export const GAS_PRICE = "5";
  
 const Contract = require('web3-eth-contract');
 
