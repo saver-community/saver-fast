@@ -129,21 +129,7 @@ const Desktop = (props) => {
                     </VStack>
                     <Box w='10px' />
                 </HStack>
-                : <HStack w='full'>
-                <Box w='10px' />
-                <VStack h='full'>
-                    <Spacer />
-                    <Text color={colorCard}>Pendiente</Text>
-                    <Spacer />
-                </VStack>
-                <Spacer />
-                <VStack h='full'>
-                    <Spacer />
-                    <Text color={colorCard}>{ props.actualAmount == `0.00 BUSD` ? props.amountRaised : props.actualAmount }</Text>
-                    <Spacer />
-                </VStack>
-                <Box w='10px' />
-            </HStack>
+                : null
             }
             <HStack w='full'>
                 <Box w='10px' />

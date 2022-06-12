@@ -377,7 +377,7 @@ export const getDappData = async () =>
     const alreadyClaim = await ContractST.methods.holderClaimed(addressAccount, rewardIDonClaim).call();
     const userQualified = await ContractST.methods.canReclaim(addressAccount).call();
     const claimFrom = await ContractST.methods.claimFrom(addressAccount).call();
-    const canClaim = ( (Number(claimFrom) <= Number(rewardIDonClaim)) && !alreadyClaim && userQualified );
+    const canClaim = ( (Number(claimFrom) <= Number(rewardIDonClaim)) && !alreadyClaim && userQualified && (actualAmountToClaim <= actualRewardAmount) );
 
     window.document.getElementById('loadingPercent').innerHTML = "60%";
 

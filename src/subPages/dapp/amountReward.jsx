@@ -383,6 +383,12 @@ export const AmountReward = () => {
                             </Text> :
                          null
                     }
+                    {
+                        (!canClaim && userQualified && (actualRewardState.actualAmount < actualAmountToClaim) ) ?
+                            <Text color='pink.400' fontSize='12px' fontFamily='italic'>
+                                No quedan fondos suficientes en el bote para entregar la cantidad que debes recibir.
+                            </Text> : null
+                    }
                 </VStack>
 
                 <Spacer />
