@@ -42,7 +42,7 @@ const getSaverPrice = async () =>
     const res = await ContractPair.methods.getReserves().call();
     
 
-    return `${Number(res[0]/res[1]).toFixed(2)} BUSD`;
+    return `${Number(res[1]/res[0]).toFixed(2)} BUSD`;
 };
 
 const getHoursToNextReward = (timestampNow, timestampOpenReward) => 
