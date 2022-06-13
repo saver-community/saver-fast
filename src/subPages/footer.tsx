@@ -81,7 +81,7 @@ export const Footer = () => {
                 alt='telegram'
                 boxSize='20px'
                 />
-                <Link href="https://saver-community.gitbook.io/es/preguntas-frecuentes" color='pink.300' isExternal fontSize='md'>Preguntas Frequentes</Link>
+                <Link href="https://saver-community.gitbook.io/es/preguntas-frecuentes" color='pink.300' isExternal fontSize='md'>Telegram</Link>
             </HStack>
             
             <Box h='5px' />
